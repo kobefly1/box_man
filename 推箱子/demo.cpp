@@ -93,8 +93,8 @@ void gameNextScene(IMAGE* bg) {
 	putimage(0, 0, bg);
 	settextcolor(WHITE);
 	RECT rec = { 0,0,SCREEN_WIDTH,SCREEN_HEIGHT };
-	settextstyle(20, 0, "宋体");
-	drawtext("恭喜您,点击进入下一关",&rec,DT_CENTER|DT_VCENTER|DT_SINGLELINE);
+	settextstyle(20, 0, _T("宋体"));
+	drawtext(_T("恭喜您,点击进入下一关"),&rec,DT_CENTER|DT_VCENTER|DT_SINGLELINE);
 	//::system("pause");
 	Sleep(1000);
 	cleardevice();
@@ -103,8 +103,8 @@ void gameOverScene(IMAGE* bg) {
 	putimage(0, 0, bg);
 	settextcolor(WHITE);
 	RECT rec = { 0,0,SCREEN_WIDTH,SCREEN_HEIGHT };
-	settextstyle(20, 0, "宋体");
-	drawtext("恭喜您,成功通关!", &rec, DT_CENTER | DT_VCENTER | DT_SINGLELINE);
+	settextstyle(20, 0, _T("宋体"));
+	drawtext(_T("恭喜您,成功通关!"), &rec, DT_CENTER | DT_VCENTER | DT_SINGLELINE);
 }
 
 void gameControl(DIRECTION direct){
@@ -187,16 +187,16 @@ void init_game_graph(IMAGE &bg_img)
 	initgraph(SCREEN_WIDTH, SCREEN_HEIGHT);
 
 	//设置背景
-	loadimage(&bg_img, "blackground.bmp", SCREEN_WIDTH, SCREEN_HEIGHT, true);
+	loadimage(&bg_img, _T("blackground.bmp"), SCREEN_WIDTH, SCREEN_HEIGHT, true);
 	putimage(0, 0, &bg_img);
 
 	//墙:0,地板:1,箱子目的地:2,小人:3,箱子:4,箱子命中目标:5
-	loadimage(&images[WALL], "wall_right.bmp", RATIO, RATIO, true);
-	loadimage(&images[FLOOR], "floor.bmp", RATIO, RATIO, true);
-	loadimage(&images[BOX_DES], "des.bmp", RATIO, RATIO, true);
-	loadimage(&images[MAN], "man.bmp", RATIO, RATIO, true);
-	loadimage(&images[BOX], "box.bmp", RATIO, RATIO, true);
-	loadimage(&images[HIT], "box.bmp", RATIO, RATIO, true);
+	loadimage(&images[WALL], _T("wall_right.bmp"), RATIO, RATIO, true);
+	loadimage(&images[FLOOR], _T("floor.bmp"), RATIO, RATIO, true);
+	loadimage(&images[BOX_DES], _T("des.bmp"), RATIO, RATIO, true);
+	loadimage(&images[MAN], _T("man.bmp"), RATIO, RATIO, true);
+	loadimage(&images[BOX], _T("box.bmp"), RATIO, RATIO, true);
+	loadimage(&images[HIT], _T("box.bmp"), RATIO, RATIO, true);
 }
 int main()
 {

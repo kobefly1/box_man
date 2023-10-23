@@ -1,0 +1,12 @@
+﻿  database1.cpp
+F:\Microsoft Visual Studio\project\推箱子\database1.cpp(159,28): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+F:\Microsoft Visual Studio\project\推箱子\database1.cpp(161,31): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+F:\Microsoft Visual Studio\project\推箱子\database1.cpp(185,12): warning C4101: “row”: 未引用的局部变量
+F:\Microsoft Visual Studio\project\推箱子\database1.cpp(184,13): warning C4101: “res”: 未引用的局部变量
+  demo.cpp
+  正在生成代码
+  Previous IPDB not found, fall back to full compilation.
+F:\Microsoft Visual Studio\project\推箱子\database1.cpp(178): warning C4715: “transform_map_db2array”: 不是所有的控件路径都返回值
+  All 150 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  已完成代码的生成
+  推箱子.vcxproj -> F:\Microsoft Visual Studio\project\推箱子\x64\Release\推箱子.exe

@@ -43,12 +43,6 @@
     </Image>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="database.cpp">
-      <Filter>源文件</Filter>
-    </ClInclude>
-    <ClInclude Include="database.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="database1.h">
       <Filter>头文件</Filter>
     </ClInclude>
