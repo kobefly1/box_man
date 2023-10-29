@@ -1,7 +1,13 @@
+
+#pragma comment(lib, "User32.lib")
+#pragma comment(lib, "Ole32.lib")
+#pragma comment(lib, "OleAut32.lib")
+#pragma comment(lib, "shell32.lib")
+
 #include<graphics.h>
 #include<conio.h>
 #include<iostream>
-
+//#include<easyx.h>
 #include"database1.h"
 using namespace std;
 
@@ -187,16 +193,16 @@ void init_game_graph(IMAGE &bg_img)
 	initgraph(SCREEN_WIDTH, SCREEN_HEIGHT);
 
 	//设置背景
-	loadimage(&bg_img, _T("blackground.bmp"), SCREEN_WIDTH, SCREEN_HEIGHT, true);
+	loadimage(&bg_img, "blackground.bmp" ,SCREEN_WIDTH, SCREEN_HEIGHT, true);
 	putimage(0, 0, &bg_img);
 
 	//墙:0,地板:1,箱子目的地:2,小人:3,箱子:4,箱子命中目标:5
-	loadimage(&images[WALL], _T("wall_right.bmp"), RATIO, RATIO, true);
-	loadimage(&images[FLOOR], _T("floor.bmp"), RATIO, RATIO, true);
-	loadimage(&images[BOX_DES], _T("des.bmp"), RATIO, RATIO, true);
-	loadimage(&images[MAN], _T("man.bmp"), RATIO, RATIO, true);
-	loadimage(&images[BOX], _T("box.bmp"), RATIO, RATIO, true);
-	loadimage(&images[HIT], _T("box.bmp"), RATIO, RATIO, true);
+	loadimage(&images[WALL], "wall_right.bmp", RATIO, RATIO, true);
+	loadimage(&images[FLOOR], "floor.bmp", RATIO, RATIO, true);
+	loadimage(&images[BOX_DES], "des.bmp", RATIO, RATIO, true);
+	loadimage(&images[MAN], "man.bmp", RATIO, RATIO, true);
+	loadimage(&images[BOX], "box.bmp", RATIO, RATIO, true);
+	loadimage(&images[HIT], "box.bmp", RATIO, RATIO, true);
 }
 int main()
 {
@@ -243,7 +249,7 @@ int main()
 		{
 			for (int j = 0; j < level.map_column; j++)
 			{
-				if (map[i][j] == MAN) {
+				if (map[i][j] == MAN)  {
 					man.x = i;
 					man.y = j;
 				}

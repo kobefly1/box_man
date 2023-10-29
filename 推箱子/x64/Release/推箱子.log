@@ -7,6 +7,6 @@ F:\Microsoft Visual Studio\project\推箱子\database1.cpp(184,13): warning C410
   正在生成代码
   Previous IPDB not found, fall back to full compilation.
 F:\Microsoft Visual Studio\project\推箱子\database1.cpp(178): warning C4715: “transform_map_db2array”: 不是所有的控件路径都返回值
-  All 150 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  All 312 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
   已完成代码的生成
   推箱子.vcxproj -> F:\Microsoft Visual Studio\project\推箱子\x64\Release\推箱子.exe

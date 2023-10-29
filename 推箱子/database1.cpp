@@ -4,7 +4,7 @@
 #include<stdio.h>
 #include<iostream>
 #define DB_NAME "box_man"
-#define DB_HOST "192.168.79.1"
+#define DB_HOST "10.152.78.32"
 #define DB_PORT 3306
 #define DB_USER "root"
 #define DB_USER_PASSWD "1234"
